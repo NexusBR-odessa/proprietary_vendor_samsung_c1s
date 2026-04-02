@@ -98,7 +98,9 @@ PRODUCT_PACKAGES += \
     sensors.grip \
     sensors.sensorhub \
     vendor.samsung.hardware.camera.device@5.0-impl \
+    vendor.samsung.hardware.camera.device@5.0 \
     vendor.samsung.hardware.camera.provider@4.0-legacy \
+    vendor.samsung.hardware.camera.provider@4.0 \
     vendor.samsung.hardware.nfc@2.0 \
     HotwordEnrollmentOKGoogleEx3CORTEXM4 \
     HotwordEnrollmentXGoogleEx3CORTEXM4 \
