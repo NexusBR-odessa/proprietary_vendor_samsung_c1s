@@ -75,13 +75,10 @@ PRODUCT_PACKAGES += \
     hwcomposer.exynos990 \
     libExynosHWCService \
     libExynosOMX_Core \
-    libExynosOMX_Resourcemanager \
     libHprFace_GAE_api.camera.samsung \
     libHpr_RecGAE_cvFeature_v1.0.camera.samsung \
     libOpenCv.camera.samsung \
     libbeautyshot.arcsoft \
-    libexynoscamera3 \
-    libexynosdisplay \
     libexynosgraphicbuffer \
     libexynosgscaler \
     libimgproc_sw.unifunc \
@@ -98,6 +95,7 @@ PRODUCT_PACKAGES += \
     libbauthserver \
     libbauthtzcommon \
     libegis_fp_normal_sensor_test \
+    libexynoscamera3 \
     libexynoscamera_bayergdc_plugin \
     libexynoscamera_fakemultiframe \
     libexynoscamera_vpl_plugin \
