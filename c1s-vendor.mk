@@ -74,7 +74,6 @@ PRODUCT_PACKAGES += \
     gralloc.exynos990 \
     hwcomposer.exynos990 \
     libExynosHWCService \
-    libExynosOMX_Core \
     libHprFace_GAE_api.camera.samsung \
     libHpr_RecGAE_cvFeature_v1.0.camera.samsung \
     libOpenCv.camera.samsung \
