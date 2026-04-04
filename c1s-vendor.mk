@@ -21,7 +21,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1s/proprietary/vendor/firmware/APBargeIn_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBargeIn_AUDIO_SLSI.bin \
     vendor/samsung/c1s/proprietary/vendor/firmware/APBiBF_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBiBF_AUDIO_SLSI.bin \
     vendor/samsung/c1s/proprietary/vendor/firmware/APDV_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APDV_AUDIO_SLSI.bin \
-    vendor/samsung/c1s/proprietary/vendor/firmware/APSV_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APSV_AUDIO_SLSI.bin \
     vendor/samsung/c1s/proprietary/vendor/firmware/APTV_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APTV_AUDIO_SLSI.bin \
     vendor/samsung/c1s/proprietary/vendor/firmware/AP_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/AP_AUDIO_SLSI.bin \
     vendor/samsung/c1s/proprietary/vendor/firmware/SoundBoosterParam.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SoundBoosterParam.bin \
@@ -70,25 +69,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/c1s/proprietary/vendor/tee/driver/00000000-0000-0000-0000-53626f786476:$(TARGET_COPY_OUT_VENDOR)/tee/driver/00000000-0000-0000-0000-53626f786476
 
 PRODUCT_PACKAGES += \
-    gralloc.default \
-    gralloc.exynos990 \
-    hwcomposer.exynos990 \
-    libExynosHWCService \
-    libHprFace_GAE_api.camera.samsung \
-    libHpr_RecGAE_cvFeature_v1.0.camera.samsung \
-    libOpenCv.camera.samsung \
-    libbeautyshot.arcsoft \
-    libexynosgraphicbuffer \
-    libexynosgscaler \
-    libimgproc_sw.unifunc \
-    libmpbase \
-    unihal_android \
-    unihal_cutils \
-    unihal_entry \
-    unihal_filter_unit \
-    unihal_main \
-    unihal_scenario \
-    unihal_uniplugin@1.0 \
     libswdap \
     camera.exynos990 \
     libbauthserver \
@@ -107,10 +87,6 @@ PRODUCT_PACKAGES += \
     nfc_nci_nxpsn \
     sensors.grip \
     sensors.sensorhub \
-    vendor.samsung.hardware.camera.device@5.0-impl \
-    vendor.samsung.hardware.camera.device@5.0 \
-    vendor.samsung.hardware.camera.provider@4.0-legacy \
-    vendor.samsung.hardware.camera.provider@4.0 \
     vendor.samsung.hardware.nfc@2.0 \
     HotwordEnrollmentOKGoogleEx3CORTEXM4 \
     HotwordEnrollmentXGoogleEx3CORTEXM4 \
