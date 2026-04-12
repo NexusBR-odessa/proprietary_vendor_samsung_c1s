@@ -11,8 +11,6 @@ soong_namespace {
         "hardware/samsung_slsi-linaro/graphics",
         "hardware/samsung_slsi-linaro/interfaces",
         "vendor/samsung/universal9830-common",
-        "device/samsung/c1s/shim/nfc",
-        "device/samsung/c1s/shim",
     ],
 }
 
@@ -543,44 +541,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-<<<<<<< HEAD
-    name: "nfc_nci_nxpsn",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/nfc_nci_nxpsn.so",
-            ],
-            shared_libs: [
-                "android.hardware.nfc@1.0",
-                "android.hardware.nfc@1.1",
-                "android.hardware.nfc@1.2",
-                "libbase",
-                "libnfc_shim",
-                "libcutils",
-                "libhardware",
-                "libhardware_legacy",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-=======
->>>>>>> 48d0e50 (c1s: Removing unecessary nfc blobs (tks: CmdCtrlDevic3))
     name: "sensors.grip",
     owner: "samsung",
     strip: {
