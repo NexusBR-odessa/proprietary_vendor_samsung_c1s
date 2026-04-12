@@ -82,6 +82,71 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "hwcomposer.exynos990",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/hwcomposer.exynos990.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libexynosdisplay",
+                "libacryl",
+                "libui",
+                "libion",
+                "libExynosHWCService",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libExynosHWCService",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libExynosHWCService.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libbinder",
+                "libexynosdisplay",
+                "libacryl",
+                "libui",
+                "libion",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libbauthserver",
     owner: "samsung",
     strip: {
@@ -358,6 +423,24 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsn100u_fw",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsn100u_fw.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsynaFpSensorTestNwd",
     owner: "samsung",
     strip: {
@@ -460,6 +543,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+<<<<<<< HEAD
     name: "nfc_nci_nxpsn",
     owner: "samsung",
     strip: {
@@ -495,6 +579,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+=======
+>>>>>>> 48d0e50 (c1s: Removing unecessary nfc blobs (tks: CmdCtrlDevic3))
     name: "sensors.grip",
     owner: "samsung",
     strip: {
@@ -562,34 +648,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.samsung.hardware.nfc@2.0",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.samsung.hardware.nfc@2.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
 android_app_import {
     name: "HotwordEnrollmentOKGoogleEx3CORTEXM4",
     owner: "samsung",
@@ -614,15 +672,6 @@ android_app_import {
     product_specific: true,
 }
 
-prebuilt_etc_xml {
-    name: "nxp.android.hardware.nfc@1.2-service.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/nxp.android.hardware.nfc@1.2-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
 cc_prebuilt_binary {
     name: "gpsd",
     owner: "samsung",
@@ -643,42 +692,6 @@ cc_prebuilt_binary {
                 "libwrappergps",
                 "libandroid_net",
                 "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "nxp.android.hardware.nfc@1.2-service",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/nxp.android.hardware.nfc@1.2-service",
-            ],
-            shared_libs: [
-                "nfc_nci_nxpsn",
-                "libbase",
-                "libcutils",
-                "libhardware",
-                "liblog",
-                "libutils",
-                "android.hardware.nfc@1.0",
-                "android.hardware.nfc@1.1",
-                "android.hardware.nfc@1.2",
-                "libhidlbase",
-                "vendor.samsung.hardware.nfc@2.0",
                 "libc++",
                 "libc",
                 "libm",
