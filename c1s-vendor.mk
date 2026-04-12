@@ -62,8 +62,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libswdap \
     camera.exynos990 \
-    hwcomposer.exynos990 \
-    libExynosHWCService \
     libbauthserver \
     libbauthtzcommon \
     libegis_fp_normal_sensor_test \
