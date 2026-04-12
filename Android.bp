@@ -11,6 +11,8 @@ soong_namespace {
         "hardware/samsung_slsi-linaro/graphics",
         "hardware/samsung_slsi-linaro/interfaces",
         "vendor/samsung/universal9830-common",
+        "device/samsung/c1s/shim/nfc",
+        "device/samsung/c1s/shim",
     ],
 }
 
@@ -473,6 +475,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.nfc@1.1",
                 "android.hardware.nfc@1.2",
                 "libbase",
+                "libnfc_shim",
                 "libcutils",
                 "libhardware",
                 "libhardware_legacy",
@@ -489,7 +492,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
-    allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
